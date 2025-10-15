@@ -1,0 +1,7 @@
+valid_login:
+  username: standard_user
+  password: secret_sauce
+
+invalid_login:
+  username: usuario_invalido
+  password: senha_errada

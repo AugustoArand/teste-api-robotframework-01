@@ -1,0 +1,44 @@
+# Configurações por ambiente
+environments:
+  dev:
+    base_url: "https://www.saucedemo.com/v1/"
+    timeout: 30
+    retry_count: 3
+    auth:
+      enabled: true
+      token_url: 
+  
+  homolog:
+    base_url: 
+    timeout: 45
+    retry_count: 5
+    auth:
+      enabled: true
+      token_url: 
+  
+  prod:
+    base_url: 
+    timeout: 60
+    retry_count: 3
+    auth:
+      enabled: true
+      token_url: 
+
+# Endpoints da API
+endpoints:
+  users: 
+  posts: 
+  auth: 
+  health: 
+
+# Configurações de teste
+test_config:
+  default_headers:
+    Content-Type: "application/json"
+    Accept: "application/json"
+    User-Agent: "RobotFramework-API-Tests"
+  
+  status_codes:
+    success: [200, 201]
+    client_error: [400, 401, 403, 404]
+    server_error: [500, 502, 503]

@@ -1,0 +1,4 @@
+login_form:
+  username_field: user-name
+  password_field: password
+  submit_button: login-button
